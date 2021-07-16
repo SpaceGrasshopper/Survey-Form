@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="outerbox">
+
+        <header>
+            <h1 id="title">Anime Fans Survey Form</h1>
+            <p id="description">Don't believe in yourself, believe in me that believes in you.</p>
+        </header>
+
+
+        <form id="survey-form">
+
+            <div class="form-group">
+                <label id="name-label" for="name">Kimi No Na Wa</label><br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label><br>
+                <input type="number" name="age" id="number" min="5" max="95" class="form-control" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <p>How do you feel when you watch Naruto?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Fun selector</option>
+                    <option value="happy">Happy</option>
+                    <option value="excited">Excited</option>
+                    <option value="annoyed">Annoyed</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend Mob Psycho 100 to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is your favorite Strawhat in Onepiece?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an strawhat</option>
+                    <option value="luffy">Luffy</option>
+                    <option value="projects">Zoro</option>
+                    <option value="orobin">Robin</option>
+                    <option value="onami">Nami-swan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which Naruto character would you choose to go on a roadtrip with?</p>
+
+                <label><input name="prefer" value="Naruto" type="checkbox" class="input-checkbox" />Naruto</label>
+                <label>
+                    <input name="prefer" value="Sasuke" type="checkbox" class="input-checkbox" />Sasuke</label>
+                <label><input name="prefer" value="pain" type="checkbox" class="input-checkbox" />Pain</label>
+                <label><input name="prefer" value="Sakura" type="checkbox" class="input-checkbox" />Sakura-Chan</label>
+                <label><input name="prefer" value="Itachi" type="checkbox" class="input-checkbox" />Uchiha
+                    Itachi</label>
+            </div>
+
+            <div class="form-group">
+                <p>Your thoughts about the lineup of anime for winter 2021?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your thoughts here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit"> Submit </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+body{
+  background:black;
+  color:white;
+  font-family: 'Yomogi', cursive;
+}
+header{
+  text-align: center;
+}
+#survey-form{
+  border: 5px solid white;
+  margin:0 30%;
+}
+
+.form-group{
+  margin:2vh;
+}
+
+.form-control{
+  width: 97%;
+}
+
+.input-textarea{
+  width: 97%;
+}
